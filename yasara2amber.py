@@ -1,3 +1,15 @@
+###############################################################################
+# yasara2amber.py
+# 05/08/2021
+# Gaurav Sharma
+#
+# Usage: 
+# python yasara2amber.py
+#
+# Description:
+# The script can convert the PDB files ontrained from yasara software to amber software. 
+###############################################################################
+
 with open('yasara.pdb', 'r') as file :
         filedata = file.read()
         filedata = filedata.replace('1H   THR', ' H1  THR') #edit the '1H   THR' to 'H1  THR'
